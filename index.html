@@ -3,75 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study MBBS Abroad</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Study MBBS Abroad | University Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        fbq('init', 'FB_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
 </head>
-<body class="bg-gray-100">
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-800 p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-xl font-bold">MBBS Abroad</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#why" class="text-white hover:text-blue-200">Why Study</a>
+                <a href="#countries" class="text-white hover:text-blue-200">Countries</a>
+                <a href="#admission" class="text-white hover:text-blue-200">Admission</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <header class="bg-blue-600 text-white p-10 text-center">
-        <h1 class="text-4xl font-bold">Apply Now for MBBS Abroad</h1>
-        <p class="mt-4">Start your journey to becoming a doctor today!</p>
-        <a href="#lead-form" class="mt-6 inline-block bg-white text-blue-600 font-semibold py-2 px-4 rounded">Get Started</a>
-    </header>
-
-    <!-- Why Study MBBS Abroad -->
-    <section class="p-10">
-        <h2 class="text-3xl font-bold text-center">Why Study MBBS Abroad?</h2>
-        <ul class="mt-6 space-y-4">
-            <li>High-quality education</li>
-            <li>Affordable tuition fees</li>
-            <li>Diverse cultural experience</li>
-        </ul>
-    </section>
-
-    <!-- Top Countries -->
-    <section class="p-10 bg-gray-200">
-        <h2 class="text-3xl font-bold text-center">Top Countries</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-            <div class="p-4 bg-white rounded shadow">Russia</div>
-            <div class="p-4 bg-white rounded shadow">Uzbekistan</div>
-            <div class="p-4 bg-white rounded shadow">Kazakhstan</div>
-            <div class="p-4 bg-white rounded shadow">Philippines</div>
-            <div class="p-4 bg-white rounded shadow">Georgia</div>
-            <div class="p-4 bg-white rounded shadow">Kyrgyzstan</div>
-            <div class="p-4 bg-white rounded shadow">Egypt</div>
+    <section class="pt-20 bg-blue-50">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Study MBBS Abroad</h1>
+            <p class="text-xl mb-8">Start Your Medical Career in Top International Universities</p>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
+                Apply Now
+            </button>
         </div>
     </section>
 
-    <!-- Admission Process & Eligibility -->
-    <section class="p-10">
-        <h2 class="text-3xl font-bold text-center">Admission Process & Eligibility</h2>
-        <ol class="mt-6 space-y-4">
-            <li>Step 1: Research your options</li>
-            <li>Step 2: Prepare your documents</li>
-            <li>Step 3: Apply to your chosen university</li>
-        </ol>
+    <!-- Why Study Section -->
+    <section id="why" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Why Study MBBS Abroad?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white shadow-lg rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Global Recognition</h3>
+                    <p>WHO & MCI approved universities</p>
+                </div>
+                <!-- Add more benefit cards -->
+            </div>
+        </div>
     </section>
 
-    <!-- Call-to-Action (Lead Form) -->
-    <section id="lead-form" class="p-10 bg-gray-200">
-        <h2 class="text-3xl font-bold text-center">Get in Touch</h2>
-        <form class="mt-6 max-w-md mx-auto bg-white p-6 rounded shadow">
-            <input type="text" placeholder="Name" class="w-full p-2 mb-4 border rounded" required>
-            <input type="email" placeholder="Email" class="w-full p-2 mb-4 border rounded" required>
-            <input type="tel" placeholder="Phone" class="w-full p-2 mb-4 border rounded" required>
-            <select class="w-full p-2 mb-4 border rounded" required>
-                <option value="">Select Country Preference</option>
-                <option value="Russia">Russia</option>
-                <option value="Uzbekistan">Uzbekistan</option>
-                <option value="Kazakhstan">Kazakhstan</option>
-                <option value="Philippines">Philippines</option>
-                <option value="Georgia">Georgia</option>
-                <option value="Kyrgyzstan">Kyrgyzstan</option>
-                <option value="Egypt">Egypt</option>
-            </select>
-            <button id="button" type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Submit</button>
-        </form>
+    <!-- Countries Grid -->
+    <section id="countries" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Top Destinations</h2>
+            <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3>Russia</h3>
+                    <p>Starting from $5,000/year</p>
+                </div>
+                <!-- Add other countries -->
+            </div>
+        </div>
     </section>
 
-    <footer class="text-center p-4 bg-blue-600 text-white">
-        <p>&copy; 2025 University Insights. All rights reserved.</p>
-    </footer>
+    <!-- Contact Form -->
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <form id="leadForm" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Full Name" 
+                           class="w-full p-3 rounded text-gray-800"
+                           required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" 
+                           class="w-full p-3 rounded text-gray-800"
+                           required>
+                </div>
+                <button type="submit" 
+                        class="w-full bg-white text-blue-800 py-3 rounded hover:bg-gray-100">
+                    Get Free Consultation
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Form validation
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Track conversion
+            gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});
+            fbq('track', 'Lead');
+            
+            // Handle form submission
+            alert('Thank you! We will contact you shortly.');
+            this.reset();
+        });
+    </script>
 </body>
-<script src="index.js"></script>
 </html>
